@@ -1,0 +1,3013 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "Bkoodak";
+    src: url("fonts/BKoodakBold.eot");
+    src: url("fonts/BKoodakBold.ttf");
+    src: url("fonts/BKoodakBold.woff");
+}
+@media screen and (min-width: 1200px){
+    /****************menu***************/
+    section.openMenu>i{
+        display: none;
+    }
+    section.wrapper{
+        width: 100%;
+
+    }
+    section.mainPage{
+        width: 100%;
+        height:100vh;
+        background: url("Images2/Wave Line.svg");
+
+    }
+    section.menu{
+        width: 100%;
+        height: 50px;
+    }
+    section.menu>nav{
+        width: 100% !important;
+        height: inherit;
+        display: flex !important;
+        flex-flow: row-reverse nowrap !important;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        right: 0;
+        background-color: rgba(0,0,0,0.96);
+    }
+    section.menu img{
+        padding: 35px;
+        box-sizing: border-box;
+    }
+    section.menu>nav>ul{
+        width:inherit;
+        display: flex !important;
+        flex-flow: row-reverse nowrap !important;
+        align-items: center;
+    }
+    section.menu>nav>i#close{
+        display: none !important;
+    }
+    section.menu>nav>ul>li{
+        list-style: none;
+        margin-right: 3.125rem;
+
+    }
+    section.menu>nav>ul>li>a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 1.25rem;
+    }
+    /****************end menu***************/
+    /**************parallax***********/
+    section.parallax{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        animation-duration: 2.6s;
+    }
+    section.img{
+        width: 50%;
+    }
+    section.parallax img{
+        width: 650px;
+        height: 620px;
+        margin-left: 10%;
+        margin-top: 50px;
+        animation-duration: 3s;
+    }
+    section.span{
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-right: 15%;
+        animation-duration: 3s;
+    }
+    section.span>span{
+
+        direction: rtl;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 1.375rem;
+    }
+    section.span>p{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        width: 45%;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    section.span>button{
+        border: none;
+        background-color: #0954a4;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        border-radius: 45%;
+        width: 30%;
+        height: 55px;
+        font-size: 20px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    /*************end parallax**********/
+    /*************service*************/
+    section.service{
+        width: 100%;
+        height: auto;
+        background-color:#01001A ;
+        padding: 140px;
+        box-sizing: border-box;
+    }
+    section.header{
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.service h1{
+        text-align: center;
+        padding-top: 3%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+    }
+    section.icons{
+        padding-top: 5%;
+        margin-left: 25px;
+    }
+    section.icons>i{
+        color: deeppink;
+    }
+    section.service-image{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    section.service-image>section.row-1{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-1>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-2>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-3>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-1 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 3s;
+
+    }
+    section.service-image>section.row-2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-2 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-right: 20px;
+        animation-duration: 3s;
+
+
+    }
+    section.service-image>section.row-3{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-3 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 3s;
+
+    }
+    section.row-1 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-2 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-3 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    /*************end service*************/
+    /***************about us*************/
+    section.aboutUs{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        padding: 120px;
+        box-sizing: border-box;
+    }
+    section#about{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.aboutUs>section.header{
+        border-top: 5px solid #0954a4;
+    }
+    section.aboutUs h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+    }
+    section.icons-about{
+        padding-top: 5%;
+        margin-right: 25px;
+    }
+    section.icons-about>i{
+        color: #5a9cdd;
+    }
+    section.paragraph{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        animation-duration: 3s;
+    }
+    section.about-us{
+        animation-duration: 3s;
+    }
+    section.paragraph img{
+        width: 550px;
+        height: 500px;
+        margin-right: 35px;
+        animation-duration: 3s;
+        margin-bottom: 30%;
+    }
+    section.paragraph h2{
+        width: 50%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        margin-left: 20%;
+    }
+    section.paragraph p{
+        width: 55%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-left: 15%;
+        direction: rtl;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    /***************end about us*************/
+    /*************society******************/
+    section.society{
+        width: 100%;
+        height: 730px;
+        background-color: #01001A;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.society h1{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        text-align: center;
+        /*margin-top: 15%;*/
+        direction: rtl;
+    }
+    section.society-header{
+        animation-duration: 2s;
+    }
+    section.society p{
+        color:whitesmoke ;
+        font-size: 20px;
+        font-family: "Bkoodak";
+        direction: rtl;
+        text-align: center;
+        margin-top: 10px;
+    }
+    section.logos{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    div.row1{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        animation-duration: 4s;
+        margin-top: 10%;
+    }
+    div.row2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    div.row3{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30% !important;
+        animation-duration: 4s;
+    }
+
+    section.logos img{
+        width: 100px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 15%;
+        margin-right: 50%;
+        margin-left: 50%;
+
+    }
+    /*************end society****************/
+    /**************contact us*************/
+    section.contact{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        /*position: relative;*/
+        padding: 75px;
+        box-sizing: border-box;
+    }
+    section.contactIcon{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+    }
+    section.contactIcon>i{
+        color: deeppink;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    section.contactIcon>h1{
+        text-align: center;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+    section.contact-img-form{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    section.contact-img-form>img{
+        width: 550px;
+        height: 500px;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+        animation-duration: 4s;
+    }
+    section.form{
+        width: 70%;
+        height: auto;
+        background-color: #010d1d;
+        border-radius: 20px;
+        margin: 10% 10% 25px 15%;
+        direction: rtl;
+    }
+    section.form label{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    section.form input{
+        width: 80%;
+        background-color: #040330;
+        border: none;
+        border-radius: 40px;
+        height: 45px;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        outline: none;
+        color: white;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form textarea.comment{
+        resize: none;
+        width: 80%;
+        height: 100px;
+        border: none;
+        border-radius: 40px;
+        background-color: #040330;
+        margin-right: 10%;
+        color: whitesmoke;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    section.form button{
+        background-color: #5a9cdd;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        width: 60%;
+        height: 35px;
+        text-align: center;
+        border: none;
+        border-radius: 40px;
+        margin-right: 20%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    section.contactNumber{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background-color: #01001A;
+        padding-bottom: 25%;
+        box-sizing: border-box;
+
+    }
+    section.contactNumber>div{
+        direction: rtl;
+        display: inline;
+        color: whitesmoke;
+        margin-right: 17%;
+        font-size: 18px;
+        font-family: "Bkoodak";
+        margin-top: 8px;
+    }
+    section.contactNumber>div>i{
+        margin-left: 25px;
+    }
+    /************end contact us***************/
+    /**************question*************/
+    section.question{
+        width: 100%;
+        height: auto;
+        background: url("Images2/Wave Line (1).svg");
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    section.question>section.question-header>h1{
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 25px;
+        font-family: "Bkoodak";
+        font-size: 40px;
+    }
+    section.question>section.question-header>p{
+        color: whitesmoke;
+        width: 90%;
+        margin-left: 6%;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Bkoodak";
+        direction: rtl;
+
+    }
+    section.questions{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    section.questions>div.question-1{
+        background-color: #010d1d;
+        border-radius: 6px;
+        width: 55%;
+        height: 70px;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    div.question-1>span:nth-of-type(1){
+        background-color: #5a9cdd;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: whitesmoke;
+        text-align: center;
+        width: 35px;
+        height: 25px;
+    }
+    div.question-1>span:nth-of-type(2){
+        text-align: center;
+        font-size: 18px;
+        color: whitesmoke;
+        margin-right: 10px;
+        font-family: "Bkoodak";
+
+    }
+    section.social-icon {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13%;
+        border-top: 2px inset white;
+    }
+    section.social-icon>i{
+        margin-right: 5%;
+        font-size: 25px;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    /**************end question*************/
+    /**************scroll*************/
+    section.scroll {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #000000;
+        position: fixed;
+        bottom: 5%;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+    }
+
+    section.scroll > i {
+        line-height: 50px;
+        color: whitesmoke;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        left: 39%;
+    }
+    /************end scroll*****************/
+
+}
+
+@media (min-width: 990px) and (max-width: 1200px){
+    /****************menu***************/
+    section.openMenu>i{
+        display: none;
+    }
+    section.wrapper{
+        width: 100%;
+    }
+    section.mainPage{
+        height:100vh;
+        background: url("Images2/Wave Line.svg");
+    }
+    section.menu{
+        width: 100%;
+        height:50px;
+
+    }
+    section.menu>nav{
+        width: 100%;
+        height: inherit;
+        display: flex !important;
+        flex-flow: row-reverse nowrap !important;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.96);
+    }
+    section.menu>nav>i#close{
+        display: none !important;
+    }
+    section.menu img{
+        padding: 35px;
+        box-sizing: border-box;
+    }
+    section.menu>nav>ul{
+        width:inherit;
+        display: flex !important;
+        flex-flow: row-reverse nowrap !important;
+        align-items: center;
+    }
+    section.menu>nav>ul>li{
+        list-style: none;
+        margin-right: 3.125rem;
+
+    }
+    section.menu>nav>ul>li>a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 1.25rem;
+    }
+    /****************end menu***************/
+    /**************parallax***********/
+    section.parallax{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        animation-duration: 2.6s;
+    }
+    section.img{
+        width: 50%;
+    }
+    section.parallax img{
+        width: 590px;
+        height: 600px;
+        margin-left: 10%;
+        animation-duration: 3s;
+    }
+    section.span{
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-right: 15%;
+        animation-duration: 3s;
+    }
+    section.span>span{
+
+        direction: rtl;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 1.375rem;
+    }
+    section.span>p{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        width: 45%;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    section.span>button{
+        border: none;
+        background-color: #0954a4;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        border-radius: 45%;
+        width: 30%;
+        height: 55px;
+        font-size: 20px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    /*************end parallax**********/
+    /*************service*************/
+    section.service{
+        width: 100%;
+        height: auto;
+        background-color:#01001A ;
+        padding: 150px;
+        box-sizing: border-box;
+
+    }
+    section.header{
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.service h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+    }
+    section.icons{
+        padding-top: 5%;
+        margin-left: 25px;
+    }
+    section.icons>i{
+        color: deeppink;
+    }
+    section.service-image{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    section.service-image>section.row-1{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-1>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-2>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+    }
+    section.row-3>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-1 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 2s;
+    }
+    section.service-image>section.row-2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-2 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-right: 20px;
+        animation-duration: 2s;
+    }
+    section.service-image>section.row-3{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-3 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 2s;
+    }
+    section.row-1 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-2 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-3 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    /*************end service*************/
+    /***************about us*************/
+    section.aboutUs{
+        width: 100%;
+        height: 720px;
+        background-color: #01001A;
+        padding: 120px;
+        box-sizing: border-box;
+    }
+    section#about{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.aboutUs>section.header{
+        border-top: 5px solid #0954a4;
+    }
+    section.aboutUs h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+    }
+    section.icons-about{
+        padding-top: 5%;
+        margin-right: 25px;
+    }
+    section.icons-about>i{
+        color: #5a9cdd;
+    }
+    section.paragraph{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        animation-duration: 3s;
+        margin-bottom: 30%;
+    }
+    section.about-us{
+        animation-duration: 3s;
+    }
+    section.paragraph img{
+        width: 450px;
+        height: 400px;
+        margin-right: 35px;
+        animation-duration: 3s;
+        margin-bottom: 30%;
+    }
+    section.paragraph h2{
+        width: 55%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        margin-left: 20%;
+    }
+    section.paragraph p{
+        width: 60%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-left: 15%;
+        direction: rtl;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    /***************end about us*************/
+    /*************society******************/
+    section.society{
+        width: 100%;
+        height: 650px;
+        background-color: #01001A;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+    section.society h1{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        text-align: center;
+        margin-top: 8%;
+        direction: rtl;
+    }
+    section.society-header{
+        animation-duration: 2s;
+        margin-top: 30%;
+    }
+    section.society p{
+        color:whitesmoke ;
+        font-size: 20px;
+        font-family: "Bkoodak";
+        direction: rtl;
+        text-align: center;
+        margin-top: 15px;
+    }
+    section.logos{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    div.row1{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        animation-duration: 4s;
+        margin-top: 10%;
+    }
+    div.row2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    div.row3{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30%;
+        animation-duration: 4s;
+        /*margin-bottom: 65%;*/
+    }
+
+    section.logos img{
+        width: 100px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 15%;
+        margin-right: 50%;
+        margin-left: 50%;
+
+    }
+    /*************end society****************/
+    /**************contact us*************/
+    section.contact{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        padding: 60px;
+        box-sizing: border-box;
+    }
+    section.contactIcon{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.contactIcon>i{
+        color: deeppink;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    section.contactIcon>h1{
+        text-align: center;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    section.contact-img-form{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    section.contact-img-form>img{
+        width: 500px;
+        height: 500px;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+        animation-duration: 4s;
+    }
+    section.form{
+        width: 500px;
+        height: auto;
+        background-color: #010d1d;
+        border-radius: 20px;
+        margin: 10% 7% 20px 15%;
+        direction: rtl;
+    }
+    form{
+        width: 350px;
+    }
+    section.form label{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    section.form input{
+        width: 80%;
+        background-color: #040330;
+        border: none;
+        border-radius: 40px;
+        height: 45px;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        outline: none;
+        color: white;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form textarea.comment{
+        resize: none;
+        width: 80%;
+        height: 100px;
+        border: none;
+        border-radius: 40px;
+        background-color: #040330;
+        margin-right: 10%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form button{
+        background-color: #5a9cdd;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        width: 60%;
+        height: 35px;
+        text-align: center;
+        border: none;
+        border-radius: 40px;
+        margin-right: 20%;
+        margin-top: 30px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    section.contactNumber{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background-color: #01001A;
+        padding-bottom: 24%;
+        box-sizing: border-box;
+
+    }
+    section.contactNumber>div{
+        direction: rtl;
+        display: inline;
+        color: whitesmoke;
+        margin-right: 17%;
+        font-size: 18px;
+        font-family: "Bkoodak";
+        margin-top: 8px;
+    }
+    section.contactNumber>div>i{
+        margin-left: 25px;
+    }
+    /************end contact us***************/
+    /**************question*************/
+    section.question{
+        width: 100%;
+        height: auto;
+        background: url("Images2/Wave Line (1).svg");
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    section.question>section.question-header>h1{
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 25px;
+        font-family: "Bkoodak";
+        font-size: 40px;
+    }
+    section.question>section.question-header>p{
+        color: whitesmoke;
+        width: 90%;
+        margin-left: 6%;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Bkoodak";
+        direction: rtl;
+
+    }
+    section.questions{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    section.questions>div.question-1{
+        background-color: #010d1d;
+        border-radius: 6px;
+        width: 55%;
+        height: 70px;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    div.question-1>span:nth-of-type(1){
+        background-color: #5a9cdd;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: whitesmoke;
+        text-align: center;
+        width: 35px;
+        height: 25px;
+    }
+    div.question-1>span:nth-of-type(2){
+        text-align: center;
+        font-size: 18px;
+        color: whitesmoke;
+        margin-right: 10px;
+        font-family: "Bkoodak";
+
+    }
+    section.social-icon {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13%;
+        border-top: 2px inset white;
+    }
+    section.social-icon>i{
+        margin-right: 5%;
+        font-size: 25px;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    /**************end question*************/
+    /****************make scroll***************/
+    section.scroll {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #000000;
+        position: fixed;
+        bottom: 5%;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+    }
+
+    section.scroll > i {
+        line-height: 50px;
+        color: whitesmoke;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        left: 39%;
+    }
+
+    /****************end make scroll***************/
+}
+
+@media (min-width: 760px) and (max-width:990px){
+    /****************menu***************/
+    section.openMenu>i{
+        display: none;
+    }
+    section.wrapper{
+        width: 100%;
+    }
+    section.mainPage{
+        height:100vh;
+        background: url("Images2/Wave Line.svg");
+    }
+    section.menu{
+        width: 100%;
+        height:50px;
+
+    }
+    section.menu>nav{
+        width: 100%;
+        height: inherit;
+        display: flex !important;
+        flex-flow: row-reverse nowrap !important;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.96);
+    }
+    section.menu>nav>i#close{
+        display: none !important;
+    }
+    section.menu img{
+        padding: 35px;
+        box-sizing: border-box;
+    }
+    section.menu>nav>ul{
+        width:inherit;
+        display: flex !important;
+        flex-flow: row-reverse nowrap !important;
+        align-items: center;
+    }
+    section.menu>nav>ul>li{
+        list-style: none;
+        margin-right: 3.125rem;
+
+    }
+    section.menu>nav>ul>li>a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 1.25rem;
+    }
+    /****************end menu***************/
+    /**************parallax***********/
+    section.parallax{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        animation-duration: 2.6s;
+    }
+    section.img{
+        width: 50%;
+    }
+    section.parallax img{
+        width: 500px;
+        height: 590px;
+        margin-left: 10%;
+        animation-duration: 3s;
+    }
+    section.span{
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-right: 15%;
+        animation-duration: 3s;
+    }
+    section.span>span{
+
+        direction: rtl;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 1.375rem;
+    }
+    section.span>p{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        width: 45%;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    section.span>button{
+        border: none;
+        background-color: #0954a4;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        border-radius: 45%;
+        width: 40%;
+        height: 55px;
+        font-size: 20px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    /*************end parallax**********/
+    /*************service*************/
+    section.service{
+        width: 100%;
+        height: auto;
+        background-color:#01001A;
+        padding: 120px;
+        box-sizing: border-box;
+    }
+    section.header{
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.service h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+    }
+    section.icons{
+        padding-top: 5%;
+        margin-left: 25px;
+    }
+    section.icons>i{
+        color: deeppink;
+    }
+    section.service-image{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    section.service-image>section.row-1{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-1>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-2>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+    section.row-3>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-bottom: 25%;
+    }
+    section.row-1 img{
+        width: 180px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 2s;
+    }
+    section.service-image>section.row-2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-2 img{
+        width: 180px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-right: 20px;
+        animation-duration: 2s;
+    }
+    section.service-image>section.row-3{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-top: 20px;
+
+    }
+    section.row-3 img{
+        width: 180px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 2s;
+    }
+    section.row-1 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-2 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-3 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    /*************end service*************/
+    /***************about us*************/
+    section.aboutUs{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        padding: 80px;
+        box-sizing: border-box;
+    }
+    section#about{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.aboutUs>section.header{
+        border-top: 5px solid #0954a4;
+    }
+    section.aboutUs h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+    }
+    section.icons-about{
+        padding-top: 5%;
+        margin-right: 25px;
+    }
+    section.icons-about>i{
+        color: #5a9cdd;
+    }
+    section.paragraph{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        animation-duration: 3s;
+    }
+    section.about-us{
+        animation-duration: 3s;
+        width: 70%;
+    }
+    section.paragraph img{
+        width: 350px;
+        height: 400px;
+        /*margin-right: 20px;*/
+        animation-duration: 3s;
+        margin-left: 80px;
+    }
+    section.paragraph h2{
+        width: 100%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        margin-left: 15%;
+        font-size: 20px;
+    }
+    section.paragraph p{
+        width: 100%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-left: 15%;
+        direction: rtl;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    /***************end about us*************/
+    /*************society******************/
+    section.society{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.society h1{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        text-align: center;
+        /*margin-top: 15%;*/
+        direction: rtl;
+        margin-top: 11%;
+    }
+    section.society-header{
+        animation-duration: 2s;
+    }
+    section.society p{
+        color:whitesmoke ;
+        font-size: 20px;
+        font-family: "Bkoodak";
+        direction: rtl;
+        text-align: center;
+        margin-top: 15px;
+    }
+    section.logos{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    div.row1{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        animation-duration: 4s;
+        margin-top: 10%;
+    }
+    div.row2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    div.row3{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 70%;
+        animation-duration: 4s;
+    }
+
+    section.logos img{
+        width: 100px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 15%;
+        margin-right: 40%;
+        margin-left: 40%;
+
+    }
+    /*************end society****************/
+    /**************contact us*************/
+    section.contact{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        padding: 55px;
+        box-sizing: border-box;
+    }
+    section.contactIcon{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.contactIcon>i{
+        color: deeppink;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    section.contactIcon>h1{
+        text-align: center;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    section.contact-img-form{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    section.contact-img-form>img{
+        width: 500px;
+        height: 450px;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+        animation-duration: 4s;
+    }
+    section.form{
+        width:100%;
+        height: auto;
+        margin-right: 5%;
+        background-color: #010d1d;
+        border-radius: 20px;
+        margin-top: 10%;
+        margin-bottom: 20px;
+        direction: rtl;
+    }
+    form{
+        width: 250px;
+    }
+    section.form label{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    section.form input{
+        width: 80%;
+        background-color: #040330;
+        border: none;
+        border-radius: 40px;
+        height: 45px;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        outline: none;
+        color: white;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form textarea.comment{
+        resize: none;
+        width: 80%;
+        height: 100px;
+        border: none;
+        border-radius: 40px;
+        background-color: #040330;
+        margin-right: 10%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form button{
+        background-color: #5a9cdd;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        width: 60%;
+        height: 35px;
+        text-align: center;
+        border: none;
+        border-radius: 40px;
+        margin-right: 20%;
+        margin-top: 30px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    section.contactNumber{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background-color: #01001A;
+        padding-bottom: 25%;
+        box-sizing: border-box;
+
+    }
+    section.contactNumber>div{
+        direction: rtl;
+        display: inline;
+        color: whitesmoke;
+        margin-right: 17%;
+        font-size: 18px;
+        font-family: "Bkoodak";
+        margin-top: 8px;
+    }
+    section.contactNumber>div>i{
+        margin-left: 25px;
+    }
+    /************end contact us***************/
+    /**************question*************/
+    section.question{
+        width: 100%;
+        height: auto;
+        background: url("Images2/Wave Line (1).svg");
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    section.question>section.question-header>h1{
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 25px;
+        font-family: "Bkoodak";
+        font-size: 40px;
+    }
+    section.question>section.question-header>p{
+        color: whitesmoke;
+        width: 90%;
+        margin-left: 6%;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Bkoodak";
+        direction: rtl;
+
+    }
+    section.questions{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    section.questions>div.question-1{
+        background-color: #010d1d;
+        border-radius: 6px;
+        width: 55%;
+        height: 70px;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    div.question-1>span:nth-of-type(1){
+        background-color: #5a9cdd;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: whitesmoke;
+        text-align: center;
+        width: 35px;
+        height: 25px;
+    }
+    div.question-1>span:nth-of-type(2){
+        text-align: center;
+        font-size: 18px;
+        color: whitesmoke;
+        margin-right: 10px;
+        font-family: "Bkoodak";
+
+    }
+    section.social-icon {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13%;
+        border-top: 2px inset white;
+    }
+    section.social-icon>i{
+        margin-right: 5%;
+        font-size: 25px;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    /**************end question*************/
+    /****************make scroll***************/
+    section.scroll {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #000000;
+        position: fixed;
+        bottom: 5%;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+    }
+
+    section.scroll > i {
+        line-height: 50px;
+        color: whitesmoke;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        left: 39%;
+    }
+
+    /****************end make scroll***************/
+}
+
+@media (min-width: 540px) and (max-width:760px){
+    /****************menu***************/
+    section.menu>nav>i#close{
+        color: darkred;
+        position: absolute !important;
+        left: 15px;
+        top: 13px;
+        font-size: 30px;
+    }
+    section.wrapper{
+        width: 100%;
+    }
+    section.mainPage{
+        height:100vh;
+        width: 100%;
+        background: url("Images2/Wave Line.svg");
+    }
+    section.menu{
+        width: 100%;
+        height:auto;
+
+    }
+    section.openMenu{
+        text-align: right;
+        width: 100%;
+        position: fixed !important;
+        top: 0;
+    }
+    section.openMenu>i{
+        margin-top: 15px;
+        color: purple;
+        font-size: 30px;
+        margin-right: 5%;
+        background-color: #01001A;
+    }
+    section.menu>nav{
+        width: 100%;
+        background-color: rgba(0,0,0,0.96);
+        align-items: center;
+        justify-content: center;
+        display: none;
+        position: fixed !important;
+        top: 0;
+        z-index: 10;
+    }
+    section.menu img{
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    section.menu>nav>ul{
+        width:inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+    section.menu>nav>ul>li{
+        list-style: none;
+        /*margin-right: 3.125rem;*/
+
+    }
+    section.menu>nav>ul>li>a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 1.25rem;
+        margin-top: 10px;
+    }
+    /****************end menu***************/
+    /**************parallax***********/
+    section.parallax{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        animation-duration: 2.6s;
+    }
+    section.img{
+        width: 50%;
+    }
+    section.parallax img{
+        width: 380px;
+        height: 550px;
+        /*margin-left: 10%;*/
+        animation-duration: 3s;
+        margin-right: 20%;
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+    section.span{
+        width: 45%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        animation-duration: 3s;
+        margin: 30% 8% 10% 5%;
+    }
+    section.span>span{
+        direction: rtl;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 1.2rem;
+    }
+    section.span>p{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        width: 70%;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    section.span>button{
+        border: none;
+        background-color: #0954a4;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        border-radius: 45%;
+        width: 40%;
+        height: 55px;
+        font-size: 15px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    /*************end parallax*************/
+    /*************service*************/
+    section.service{
+        width: 100%;
+        height: auto;
+        background-color:#01001A ;
+        padding: 150px;
+        box-sizing: border-box;
+    }
+    section.header{
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.service h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+    }
+    section.icons{
+        padding-top: 5%;
+        margin-left: 25px;
+    }
+    section.icons>i{
+        color: deeppink;
+    }
+    section.service-image{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    section.service-image>section.row-1{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+    section.row-1>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-2>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-3>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 40%;
+    }
+    section.row-1 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 2s;
+
+    }
+    section.service-image>section.row-2{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+    section.row-2 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-right: 20px;
+        animation-duration: 2s;
+
+    }
+    section.service-image>section.row-3{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    section.row-3 img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+        animation-duration: 2s;
+
+    }
+    section.row-1 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-2 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-3 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    /*************end service*************/
+    /***************about us*************/
+    section.aboutUs{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        padding: 120px;
+        box-sizing: border-box;
+    }
+    section#about{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.aboutUs>section.header{
+        border-top: 5px solid #0954a4;
+    }
+    section.aboutUs h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+    }
+    section.icons-about{
+        padding-top: 5%;
+        margin-right: 25px;
+    }
+    section.icons-about>i{
+        color: #5a9cdd;
+    }
+    section.paragraph{
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+        justify-content: center;
+        animation-duration: 3s;
+    }
+    section.about-us{
+        animation-duration: 3s;
+    }
+    section.paragraph img{
+        width: 360px;
+        height: 400px;
+        /*margin: 0 auto;*/
+        animation-duration: 3s;
+    }
+    section.paragraph h2{
+        width: 75%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        text-align: justify !important;
+        margin-top: 30px !important;
+    }
+    section.paragraph p{
+        width: 75%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        text-align: justify !important;
+    }
+    /***************end about us*************/
+    /*************society******************/
+    section.society{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.society h1{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        text-align: center;
+        /*margin-top: 15%;*/
+        direction: rtl;
+        margin-top: 15%;
+    }
+    section.society-header{
+        animation-duration: 2s;
+    }
+    section.society p{
+        color:whitesmoke ;
+        font-size: 20px;
+        font-family: "Bkoodak";
+        direction: rtl;
+        text-align: center;
+        margin-top: 15px;
+    }
+    section.logos{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    div.row1{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        animation-duration: 4s;
+        margin-top: 12%;
+    }
+    div.row2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    div.row3{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30%;
+        animation-duration: 4s;
+        padding-bottom: 45%;
+        box-sizing: border-box;
+    }
+
+    section.logos img{
+        width: 100px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 15%;
+        margin-right: 20%;
+        margin-left: 20%;
+
+    }
+    /*************end society****************/
+    /**************contact us*************/
+    section.contact{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+    }
+    section.contactIcon{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.contactIcon>i{
+        color: deeppink;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    section.contactIcon>h1{
+        text-align: center;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    section.contact-img-form{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    section.contact-img-form>img{
+        width: 550px;
+        height: 500px;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+        animation-duration: 4s;
+    }
+    section.form{
+        width: 70%;
+        height: auto;
+        background-color: #010d1d;
+        border-radius: 20px;
+        margin: 10% 10% 20px 15%;
+        direction: rtl;
+    }
+    section.form label{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    section.form input{
+        width: 80%;
+        background-color: #040330;
+        border: none;
+        border-radius: 40px;
+        height: 45px;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        outline: none;
+        color: white;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form textarea.comment{
+        resize: none;
+        width: 80%;
+        height: 100px;
+        border: none;
+        border-radius: 40px;
+        background-color: #040330;
+        margin-right: 10%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form button{
+        background-color: #5a9cdd;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        width: 60%;
+        height: 35px;
+        text-align: center;
+        border: none;
+        border-radius: 40px;
+        margin-right: 20%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    section.contactNumber{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background-color: #01001A;
+        padding-bottom: 45%;
+        box-sizing: border-box;
+
+    }
+    section.contactNumber>div{
+        direction: rtl;
+        display: inline;
+        color: whitesmoke;
+        margin-right: 17% !important;
+        font-size: 18px;
+        font-family: "Bkoodak";
+        margin-top: 8px;
+    }
+    section.contactNumber>div>i{
+        margin-left: 25px;
+    }
+    /************end contact us***************/
+    /**************question*************/
+    section.question{
+        width: 100%;
+        height: auto;
+        background: url("Images2/Wave Line (1).svg");
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    section.question>section.question-header>h1{
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 25px;
+        font-family: "Bkoodak";
+        font-size: 40px;
+    }
+    section.question>section.question-header>p{
+        color: whitesmoke;
+        width: 90%;
+        margin-left: 6%;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Bkoodak";
+        direction: rtl;
+
+    }
+    section.questions{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    section.questions>div.question-1{
+        background-color: #010d1d;
+        border-radius: 6px;
+        width: 55%;
+        height: 70px;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    div.question-1>span:nth-of-type(1){
+        background-color: #5a9cdd;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: whitesmoke;
+        text-align: center;
+        width: 35px;
+        height: 25px;
+    }
+    div.question-1>span:nth-of-type(2){
+        text-align: center;
+        font-size: 18px;
+        color: whitesmoke;
+        margin-right: 10px;
+        font-family: "Bkoodak";
+
+    }
+    section.social-icon {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13%;
+        border-top: 2px inset white;
+    }
+    section.social-icon>i{
+        margin-right: 5%;
+        font-size: 25px;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    /**************end question*************/
+    /****************make scroll***************/
+    section.scroll {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #000000;
+        position: fixed;
+        bottom: 5%;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+    }
+
+    section.scroll > i {
+        line-height: 50px;
+        color: whitesmoke;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        left: 39%;
+    }
+
+    /****************end make scroll***************/
+}
+
+@media  (max-width:540px){
+    /****************menu***************/
+
+    section.wrapper{
+        width: 100%;
+    }
+    section.mainPage{
+        height:100vh;
+        background: url("Images2/Wave Line.svg");
+    }
+    section.menu{
+        width: 100%;
+        height:auto;
+
+    }
+    section.openMenu{
+        text-align: right;
+        width: 100%;
+        position: fixed !important;
+        top: 0;
+    }
+    section.openMenu>i{
+        margin-top: 15px;
+        color: purple;
+        font-size: 30px;
+        margin-right: 5%;
+        background-color: #01001A;
+    }
+    section.menu>nav{
+        width: 100%;
+        background-color: rgba(0,0,0,0.96);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: fixed !important;
+        top: 0;
+        z-index: 10;
+    }
+    section.menu img{
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    section.menu>nav>ul{
+        width:inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+    section.menu>nav>ul>li{
+        list-style: none;
+
+    }
+    section.menu>nav>ul>li>a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    /****************end menu***************/
+    /**************parallax***********/
+    section.parallax{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        animation-duration: 2.6s;
+    }
+    section.img{
+        width: 50%;
+
+    }
+    section.parallax img{
+        width: 300px;
+        height: 450px;
+        /*margin-left: 10%;*/
+        animation-duration: 3s;
+        margin-right: 20% ;
+        position: relative;
+        top: 0;
+    }
+    section.span{
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-right: 7%;
+        animation-duration: 3s;
+        margin-left: 10px;
+    }
+    section.span>span{
+        direction: rtl;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 12px;
+    }
+    section.span>p{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        width: 70%;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    section.span>button{
+        border: none;
+        background-color: #0954a4;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        border-radius: 45%;
+        width: 40%;
+        height: 55px;
+        font-size: 13px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    /*************end parallax*************/
+    /*************service*************/
+    section.service{
+        width: 100%;
+        background-color:#01001A ;
+        padding: 100px;
+        box-sizing: border-box;
+
+    }
+    section.header{
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    section.service h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 25px;
+        animation-duration: 3s;
+    }
+    section.icons{
+        padding-top: 5%;
+        margin-left: 25px;
+
+    }
+    section.icons>i{
+        color: deeppink;
+    }
+    section.service-image{
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+    section.service-image>section.row-1{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+    section.row-1>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-2>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-3>section{
+        background-color: #010d1d;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    section.row-1 img{
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+        box-sizing: border-box;
+        animation-duration: 2s;
+
+    }
+    section.service-image>section.row-2{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+    section.row-2 img{
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-right: 20px;
+        animation-duration: 2s;
+
+    }
+    section.service-image>section.row-3{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    section.row-3 img{
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+        box-sizing: border-box;
+        animation-duration: 2s;
+
+    }
+    section.row-1 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-2 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    section.row-3 p{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+    }
+    /*************end service*************/
+    /***************about us*************/
+    section.aboutUs{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+
+    }
+    section#about{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.aboutUs>section.header{
+        border-top: 5px solid #0954a4;
+    }
+    section.aboutUs h1{
+        text-align: center;
+        padding-top: 5%;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 35px;
+        animation-duration: 3s;
+
+
+    }
+    section.icons-about{
+        padding-top: 5%;
+        margin-right: 25px;
+    }
+    section.icons-about>i{
+        color: #5a9cdd;
+    }
+    section.paragraph{
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+        justify-content: center;
+        animation-duration: 3s;
+
+    }
+    section.about-us{
+        animation-duration: 3s;
+    }
+    section.paragraph img{
+        width: 360px;
+        height: 400px;
+        margin-right: 35px;
+        animation-duration: 3s;
+    }
+    section.paragraph h2{
+        width: 55%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        direction: rtl;
+        margin-left: 20%;
+        text-align: justify;
+    }
+    section.paragraph p{
+        width: 45%;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-left: 29%;
+        direction: rtl;
+        margin-top: 20px;
+        text-align: justify;
+        margin-bottom: 150px;
+    }
+    /***************end about us*************/
+    /*************society******************/
+    section.society{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.society h1{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        text-align: center;
+        /*margin-top: 15%;*/
+        direction: rtl;
+        margin-top: 100px;
+    }
+    section.society-header{
+        animation-duration: 2s;
+    }
+    section.society p{
+        color:whitesmoke ;
+        font-size: 20px;
+        font-family: "Bkoodak";
+        direction: rtl;
+        text-align: center;
+        margin-top: 15px;
+    }
+    section.logos{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    div.row1{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        animation-duration: 4s;
+    }
+    div.row2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    div.row3{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50%;
+        animation-duration: 4s;
+    }
+
+    section.logos img{
+        width: 100px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 15%;
+        margin-right: 12%;
+        margin-left: 12%;
+
+    }
+    /*************end society****************/
+    /**************contact us*************/
+    section.contact{
+        width: 100%;
+        height: auto;
+        background-color: #01001A;
+    }
+    section.contactIcon{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    section.contactIcon>i{
+        color: deeppink;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    section.contactIcon>h1{
+        text-align: center;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    section.contact-img-form{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    section.contact-img-form>img{
+        width: 480px;
+        height: 490px;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+        animation-duration: 4s;
+    }
+    section.form{
+        width: 70%;
+        height: auto;
+        background-color: #010d1d;
+        border-radius: 20px;
+        margin: 10% 10% 20px 15%;
+        direction: rtl;
+    }
+    section.form label{
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    section.form input{
+        width: 80%;
+        background-color: #040330;
+        border: none;
+        border-radius: 40px;
+        height: 45px;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        outline: none;
+        color: white;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form textarea.comment{
+        resize: none;
+        width: 80%;
+        height: 100px;
+        border: none;
+        border-radius: 40px;
+        background-color: #040330;
+        margin-right: 10%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    section.form button{
+        background-color: #5a9cdd;
+        color: whitesmoke;
+        font-family: "Bkoodak";
+        width: 60%;
+        height: 35px;
+        text-align: center;
+        border: none;
+        border-radius: 40px;
+        margin-right: 20%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    section.contactNumber{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background-color: #01001A;
+        padding-bottom: 50%;
+        box-sizing: border-box;
+
+    }
+    section.contactNumber>div{
+        direction: rtl;
+        display: inline;
+        color: whitesmoke;
+        margin-right: 17% !important;
+        font-size: 15px;
+        font-family: "Bkoodak";
+        margin-top: 8px;
+    }
+    section.contactNumber>div>i{
+        margin-left: 25px;
+    }
+    /************end contact us***************/
+    /**************question*************/
+    section.question{
+        width: 100%;
+        height: auto;
+        background: url("Images2/Wave Line (1).svg");
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    section.question>section.question-header>h1{
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 25px;
+        font-family: "Bkoodak";
+        font-size: 30px;
+    }
+    section.question>section.question-header>p{
+        color: whitesmoke;
+        width: 90%;
+        margin-left: 6%;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Bkoodak";
+        direction: rtl;
+
+    }
+    section.questions{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    section.questions>div.question-1{
+        background-color: #010d1d;
+        border-radius: 6px;
+        width: 60%;
+        height: 70px;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    div.question-1>span:nth-of-type(1){
+        background-color: #5a9cdd;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: whitesmoke;
+        text-align: center;
+        width: 35px;
+        height: 25px;
+    }
+    div.question-1>span:nth-of-type(2){
+        text-align: center;
+        font-size: 13px;
+        color: whitesmoke;
+        margin-right: 10px;
+        font-family: "Bkoodak";
+
+    }
+    section.social-icon {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13%;
+        border-top: 2px inset white;
+    }
+    section.social-icon>i{
+        margin-right: 5%;
+        font-size: 25px;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    /**************end question*************/
+    /****************make scroll***************/
+    section.scroll {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #000000;
+        position: fixed;
+        bottom: 5%;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+    }
+
+    section.scroll > i {
+        line-height: 50px;
+        color: whitesmoke;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        left: 39%;
+    }
+
+    /****************end make scroll***************/
+}

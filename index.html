@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PolTask</title>
+    <style>
+        @media screen and (min-width: 1200px){
+            section.society{
+                width: 100%;
+                height: 730px;
+                background-color: #01001A;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media (min-width: 990px) and (max-width: 1200px){
+            section.society{
+                width: 100%;
+                height: 650px;
+                background-color: #01001A;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                padding: 100px;
+                box-sizing: border-box;
+            }
+        }
+        @media (max-width:540px){
+            section.parallax img{
+                margin-top: 80% !important;
+            }
+            section.span>span{
+                margin-top: 80% !important;
+            }
+            section.paragraph h2{
+                margin-top: 60px !important;
+                text-align: center !important;
+            }
+            section.paragraph p{
+                text-align: justify !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+</head>
+<body>
+<!--wrapper-->
+<section class="wrapper">
+
+    <section class="mainPage">
+        <!--menu-->
+        <section class="menu">
+
+            <nav style="position: fixed ; top: 0;z-index: 10">
+               <a href="#"><img src="Images/Annotation%202021-11-10%20160404.png" alt="logo"></a>
+                <ul>
+                    <li><a href="#service">خدمات ما</a></li>
+                    <li><a href="#aboutUs">درباره ما</a></li>
+                    <li><a href="#society">همکاران ما</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                </ul>
+            </nav>
+            <section style="position: fixed;top: 0;z-index: 10" class="openMenu">
+                <i class="open fas fa-bars"></i>
+            </section>
+
+            <!--parallax-->
+            <section class="parallax ">
+                <section class="img animate__bounceInLeft">
+                    <img  src="Images2/Pair programming-pana.png" alt="taking-notes">
+                </section>
+                <section class="span animate__bounceInRight">
+                    <span>شرکت برنامه نویسی پل</span>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    <button>ثبت سفارش</button>
+                </section>
+            </section>
+
+            <!--end parallax-->
+        </section>
+    </section>
+<!--end menu-->
+    <!--service-->
+    <section id="service"  class="service">
+        <section class="header">
+            <section class="icons">
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+            </section>
+            <h1>خدمات ما</h1>
+        </section>
+        <section class="service-image">
+            <section class="row-1">
+                <section>
+                    <img  src="Images/Mobile%20development-rafiki.png" alt="app">
+                    <p>طراحی اپلیکیشن موبایل</p>
+                </section>
+                <section>
+                    <img  src="Images/Active%20Support-bro.png" alt="support">
+                    <p>پشتیبانی حرفه ای</p>
+                </section>
+            </section>
+            <section class="row-2">
+                <section>
+                    <img  src="Images/Blog%20post-bro.png" alt="blog">
+                    <p>خدمات سئو</p>
+                </section>
+                <section>
+                    <img  src="Images/Static%20website-amico.png" alt="website">
+                    <p>طراحی وب سایت</p>
+                </section>
+                <section>
+                    <img  src="Images/Marketing-cuate.png" alt="marketing">
+                    <p>دیجیتال مارکتینگ</p>
+                </section>
+            </section>
+            <section class="row-3">
+                <section>
+                    <img  src="Images/Transfer%20files-bro.png" alt="transfer-file">
+                    <p>انتقال رایگان فایل</p>
+                </section>
+                <section>
+                    <img  src="Images/Security%20On-bro.png" alt="security">
+                    <p>امنیت پیشرفته سایت</p>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!--end service-->
+    <!--about us-->
+    <section id="aboutUs" class="aboutUs">
+        <section class="header" id="about">
+            <section class="icons-about">
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+            </section>
+            <h1>درباره ما</h1>
+        </section>
+        <section class="paragraph ">
+            <section class="about-us">
+                <h2>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h2>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+            </section>
+            <section class="about-img">
+                <img src="Images2/Team%20page-pana.png" alt="about">
+            </section>
+        </section>
+
+    </section>
+    <!--end about us-->
+    <!--our society-->
+    <section id="society" class="society">
+        <section class="society-header">
+            <h1>همکارانی که به وجودشان مفتخریم</h1>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+        </section>
+        <section class="logos">
+            <div class="row1">
+                <img src="Images/unnamed.png" alt="logo">
+                <img src="Images2/NoPath%20-%20Copy%20(2).png" alt="logo">
+                <img src="Images2/NoPath%20-%20Copy%20(3).png" alt="logo">
+            </div>
+            <div class="row2 ">
+                <img src="Images2/NoPath - Copy.png" alt="logo">
+                <img src="Images2/NoPath%20-%20Copy%20(5).png" alt="logo">
+            </div>
+            <div class="row3">
+                <img src="Images2/NoPath%20-%20Copy(1).png" alt="logo">
+                <img src="Images2/NoPath%20-%20Copy%20(9).png" alt="logo">
+                <img src="Images2/NoPath%20-%20Copy%20(7).png" alt="logo">
+            </div>
+        </section>
+    </section>
+    <!--end our society-->
+    <!--contact us-->
+    <section id="contact" class="contact">
+        <section class="contact-header">
+            <section class="contactIcon">
+                <h1>تماس با ما</h1>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </section>
+        </section>
+        <section class="contact-img-form">
+            <img src="Images/Contact%20us-amico.png" alt="contact">
+
+
+            <section class="form">
+                <form>
+                    <label for="fName">نام و نام خانوادگی:</label><br>
+                    <input required type="text" name="firstName" id="fName"><br>
+                    <label for="phoneNumber">شماره تماس:</label><br>
+                    <input required type="number" name="number" id="phoneNumber"><br>
+                    <label for="Email">ایمیل:</label><br>
+                    <input type="text" name="email" id="Email"><br>
+                    <label for="comment">موضوع پیام:</label><br>
+                    <input required type="text" name="comment" id="commentSubject"><br>
+                    <label for="comment">متن پیام:</label><br>
+                    <textarea class="comment" name="comment" id="comment"></textarea><br>
+                    <button>ثبت نظر</button>
+                </form>
+            </section>
+        </section>
+    </section>
+    <section class="contactNumber">
+        <div>
+            <i class="fas fa-phone-alt"></i> شماره تماس:88997766 -021</div>
+
+        <div><i class="fas fa-envelope"></i>ایمیل:
+            info@polcompany.com</div>
+
+        <div>
+            <i class="fas fa-map-marker-alt"></i>آدرس:  تهران,بلوار اول,خیابان دوم,کوچه سوم,پلاک 4 واحد 5</div>
+
+    </section>
+    <!--end contact us-->
+    <!--questions-->
+    <section class="question">
+        <section class="question-header">
+            <h1>سوالات متداول</h1>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </section>
+        <section class="questions">
+            <div class="question-1">
+                <span>1</span>
+                <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ؟</span>
+            </div>
+
+            <div class="question-1">
+                <span>2</span>
+                <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ؟</span>
+            </div>
+
+            <div class="question-1">
+                <span>3</span>
+                <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ؟</span>
+            </div>
+
+            <div class="question-1">
+                <span>4</span>
+                <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ؟</span>
+            </div>
+        </section>
+        <section class="social-icon">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+        </section>
+    </section>
+    <!--end questions-->
+    <!--scroll-->
+    <section class="scroll">
+        <i class="fas fa-arrow-up"></i>
+    </section>
+    <!--end scroll-->
+</section>
+<!--end wrapper-->
+
+<!--js-->
+<script type="module" src="app.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+
+    // let service=$('section.menu>nav>ul>li:nth-of-type(1)>a').attr('data-id');
+    // let serviceOffset=$(`section${service}`).offset().top+50;
+    // function Service() {
+    //     $('html').animate({
+    //         scrollTop:serviceOffset,
+    //     },1500,"linear")
+    // }
+    //
+    // let aboutUs=$('section.menu>nav>ul>li:nth-of-type(2)>a').attr('data-id');
+    // let aboutOffset=$(`section${aboutUs}`).offset().top+50;
+    // function About() {
+    //     $('html').animate({
+    //         scrollTop: aboutOffset,
+    //     },1500,"linear")
+    // }
+    //
+    // let society=$('section.menu>nav>ul>li:nth-of-type(3)>a').attr('data-id');
+    // let societyOffset=$(`section${society}`).offset().top+40;
+    // function Society() {
+    //     $('html').animate({
+    //         scrollTop:societyOffset,
+    //     },1500,"linear")
+    // }
+    //
+    // let contact=$('section.menu>nav>ul>li:nth-of-type(4)>a').attr('data-id');
+    // let contactOffset=$(`section${contact}`).offset().top+50;
+    // function Contact() {
+    //     $('html').animate({
+    //         scrollTop:contactOffset,
+    //     },1500,"linear")
+    // }
+</script>
+</body>
+</html>
